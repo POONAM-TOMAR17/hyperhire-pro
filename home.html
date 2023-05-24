@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Responsive Landing Page Design</title>
+    
+    <!-- All CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+const xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    }, { 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script>
+</head>
+<body class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <div class="d-flex">
+             <img src="img/home/back.png"/>
+        
+         </div>  
+        
+       <div class="bold-heading">자유톡</div>
+          <!-- <a class="navbar-brand" href="#"><span class="text-warning">Build</span>Con</a> -->
+         <img src="img/home/notification-icon.png"/>
+        </div>
+      </nav>
+         
+         
+         
+    
+<div class=" mar-top-80">
+ 
+   <div class="d-flex container-footer mb-20"> 
+            <div class="d-flex">
+                <img class="height-40 mar-right-4 profile-icon-size" src="img/home/Profile-icon (2).png"/>
+                <div class=""> <div class="bold-heading">자유톡 </div><div class="text-gray-2">163 cm, 50kg</div></div>
+            </div>  
+            <div><span class="text-white bg-green-1 ">#팔로우</span>
+            </div>
+          </div>
+    <!-- <div class="d-flex justify-content-space-between"><p class="text-gray">Your achievement</p><p class="text-red1 uppercase"><strong>+ COMPARE</strong></p></div> -->
+   <p class="bold-heading">지난 월요일에 했던 이벤트 중 가장 괜찮은 상품 뭐야?</p>
+  <div>지난 월요일에 2023년 S/S 트렌드 알아보기 이벤트 참석했던 팝들아~
+혹시 어떤 상품이 제일 괜찮았어? 
+
+후기 올라오는거 보면 로우라이즈? 그게 제일 반응 좋고 그 테이블이 
+제일 재밌었다던데 맞아???
+
+올해 로우라이즈가 트렌드라길래 나도 도전해보고 싶은데 말라깽이가
+아닌 사람들도 잘 어울릴지 너무너무 궁금해ㅜㅜ로우라이즈 테이블에
+있었던 팝들 있으면 어땠는지 후기 좀 공유해주라~~!</div>
+  
+        
+        
+  </div>
+  <div class="mar-top-25">
+    <button class="badge">#2023</button>
+      <button class="badge">#TODAYISMONDAY</button>
+        <button class="badge">#TOP</button>
+          <button class="badge">#POPS!</button>
+            <button class="badge">#WOW</button>
+          
+                 <button class="badge">#ROW</button>
+  </div>
+    <div id="carouselExampleIndicators" class="carousel slide pad-top-80" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/home-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Your Dream House</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                              <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/home-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Always Dedicated</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                              <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/home-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>True Construction</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                              <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="d-flex mar-top-25">
+        <div><img class="mar-right-4" src="img/home/heart.png"/><span class="mar-right-4">5</span></div>
+         <div><img class="mar-right-4" src="img/home/off.png"/><span class="mar-right-4">5</span></div
+           <div><img class="mar-right-4" src="img/home/comment.png"/><span class="mar-right-4">5</span></div
+      </div>
+<div class="tab-content pad-top-80" id="ex1-content">
+  <div
+    class="tab-pane fade show active"
+    id="ex1-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex1-tab-1"
+  >
+    <div class="container">
+       
+          <div class="d-flex container-footer mb-20"> 
+            <div class="d-flex">
+                <img class="height-40 profile-icon-size" src="img/home/Profile-icon (2).png"/>
+                <div> <div class="bold-heading">안녕 나 응애  </div><div>어머 제가 있던 테이블이 제일 반응이 좋았나보네요🤭 
+우짤래미님도 아시겠지만 저도 일반인 몸매 그 이상도 이하도
+아니잖아요?! 그런 제가 기꺼이 도전해봤는데 생각보다
+괜찮았어요! 오늘 중으로 라이브 리뷰 올라온다고 하니
+꼭 봐주세용~!</div>
+<div>오 대박! 라이브 리뷰 오늘 올라온대요? 챙겨봐야겠다</div>
+
+ <div class="d-flex mar-top-25">
+                <img class="height-40 profile-icon-size" src="img/home/Profile-icon (2).png"/>
+                <div> <div class="bold-heading">ㅇㅅㅇ</div><div>오 대박! 라이브 리뷰 오늘 올라온대요? 챙겨봐야겠다</div>
+<div>오 대박! 라이브 리뷰 오늘 올라온대요? 챙겨봐야겠다 <span class="text-red1">95.58%</span></div></div>
+            </div> </div>
+
+            </div>  
+            <div><span class="text-red1">. . .</span>
+            </div>
+          </div>
+         
+         
+        
+      
+    </div>
+  </div>
+  <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+    Tab 2 content
+  </div>
+  <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+    Tab 3 content
+  </div>
+</div>
+<div class="d-flex">
+   <img class="" src="img/home/imagesmode.png"/>
+   <span>댓글을 남겨주세요.</span>
+   <div>등록</div>
+</div>
+<!-- Tabs content -->
+ 
+     
+    <!-- All Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</body>
+
+</html>
+
+
+
